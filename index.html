@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/GoogleMaps.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+  </head>
+  
+  <body>
+    <div id="map-canvas"></div>
+    <div id="panel">
+      <div id = "address">
+        <input id="street" type="textbox" placeholder="Street" class = "input-address"></input>
+        <input id="city" type="textbox" placeholder="City" class = "input-address"></input>
+        <input id="state" type="textbox" placeholder="State" class = "input-address"></input>
+        <input id="country" type="textbox" placeholder="Country" class = "input-address"></input>
+        <input id="zipcode" type="textbox" placeholder="Zipcode" class = "input-address"></input>
+      </div>
+      <input id = "search-button" type="button" value="Search" onclick="codeAddress()"></input>
+
+      <div id = "showWeather">
+        <div id = "weatherIcon">
+          <canvas id="icon1" width="140" height="140"></canvas>
+        </div>
+        <div id = "weather"></div>
+      </div>
+
+      <div id = "weather-weekForecast">
+        <div id = "summary">
+          <div id = "week-weather-summary-icon">
+            <canvas id="icon2" width="110" height="110"></canvas>
+          </div>
+          <div id = "week-weather-summary"></div>
+        </div>
+
+        <div>
+          <div id = "one" class = "forecast-list">
+            <div id = "day1" class = "day">
+            </div>
+            <div id = "temp1" class = "temp">
+            </div>
+            <div class = "icon3">
+              <canvas id="icon3" width="28" height="28"></canvas>
+            </div>
+          </div>
+
+          <div id = "two" class = "forecast-list">
+            <div id = "day2" class = "day">
+            </div>
+            <div id = "temp2" class = "temp">
+            </div>
+            <div class = "icon3">
+              <canvas id="icon4" width="28" height="28"></canvas>
+            </div>
+          </div>
+
+          <div id = "three" class = "forecast-list">
+            <div id = "day3" class = "day">
+            </div>
+            <div id = "temp3" class = "temp">
+            </div>
+            <div class = "icon3">
+              <canvas id="icon5" width="28" height="28"></canvas>
+            </div>
+          </div>
+
+          <div id = "four" class = "forecast-list">
+            <div id = "day4" class = "day">
+            </div>
+            <div id = "temp4" class = "temp">             
+            </div>
+            <div class = "icon3">
+              <canvas id="icon6" width="28" height="28"></canvas>
+            </div>
+          </div>
+
+          <div id = "five" class = "forecast-list">
+            <div id = "day5" class = "day">
+            </div>
+            <div id = "temp5" class = "temp">
+            </div>
+            <div class = "icon3">
+              <canvas id="icon7" width="28" height="28"></canvas>
+            </div>
+          </div>
+
+          <div id = "six" class = "forecast-list">
+            <div id = "day6" class = "day">
+            </div>
+            <div id = "temp6" class = "temp">
+            </div>
+            <div class = "icon3">
+              <canvas id="icon8" width="28" height="28"></canvas>
+            </div>
+          </div>
+
+          <div id = "seven" class = "forecast-list">
+            <div id = "day7" class = "day">
+            </div>
+            <div id = "temp7" class = "temp">
+            </div>
+            <div class = "icon3">
+              <canvas id="icon9" width="28" height="28"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--JavaScript-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLI0WZDGgvxMFgWyBiR6j3NSDvsQkmsag"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src = 'js/bootstrap.js'></script>
+    <script src = 'js/GoogleMaps.js'></script>
+    <script src="js/skycons.js"></script>
+
+  </body>
+</html>
